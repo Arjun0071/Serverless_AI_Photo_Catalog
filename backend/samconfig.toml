@@ -1,0 +1,11 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "new-webai"
+resolve_s3 = true
+s3_prefix = "new-webai"
+region = "ap-south-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+parameter_overrides = "Prefix=\"my-aii\" Workload=\"pic-catalog\" BedrockLayerArn=\"arn:aws:lambda:ap-south-1:011528296400:layer:bedrock-layer:1\""
+image_repositories = []
